@@ -13,6 +13,6 @@ void loop() {
   int xValue = analogRead(X_PIN);
   int yValue = analogRead(Y_PIN);
   int switchState = digitalRead(SWITCH_PIN);
-  Serial.println("[MOUSE] " + String(xValue) + " " + String(yValue));
-  Serial.println("[CLICK] " + String(switchState));
+  Serial.print("[MOUSE] " + String(xValue) + " " + String(yValue));
+  Serial.println("\t[CLICK] " + String(switchState));
 }
